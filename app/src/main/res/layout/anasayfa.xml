@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".anasayfa">
+
+    <TextView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="217dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="24dp"
+        android:background="#08092A"
+        android:ems="10"
+        android:hint="Kullanıcı Adınız:"
+        android:inputType="textPersonName"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/p1" />
+
+    <TextView
+        android:id="@+id/p1"
+        android:layout_width="307dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="139dp"
+        android:layout_marginLeft="139dp"
+        android:layout_marginTop="62dp"
+        android:layout_marginBottom="24dp"
+        android:text="NBANK"
+        android:textColor="#08092A"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/username"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="217dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="32dp"
+        android:background="#08092A"
+        android:ems="10"
+        android:hint="Parolanız:"
+        android:inputType="textPersonName"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="81dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="36dp"
+        android:background="#FD6D00"
+        android:onClick="bugiris"
+        android:text="GİRİŞ YAP"
+        android:textColor="#08092A"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password" />
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#08092A"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/kayit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kayit" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:layout_marginRight="28dp"
+        android:layout_marginBottom="25dp"
+        android:text="veya"
+        android:textColor="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/kayit"
+        app:layout_constraintEnd_toEndOf="@+id/kayit"
+        app:layout_constraintTop_toBottomOf="@+id/login" />
+
+    <Button
+        android:id="@+id/kayit"
+        android:layout_width="84dp"
+        android:layout_height="21dp"
+        android:layout_marginBottom="24dp"
+        android:background="#5557BA"
+        android:onClick="bukayit"
+        android:text="Kayıt Ol"
+        app:layout_constraintBottom_toTopOf="@+id/error"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:shadowColor="#08092A"
+        android:text="Gizle"
+        android:textColor="#E9E7E0"
+        android:textColorHighlight="#08092A"
+        android:textColorHint="@color/colorPrimary"
+        android:textColorLink="#08092A"
+        android:textCursorDrawable="@color/colorPrimary"
+        app:layout_constraintBottom_toTopOf="@+id/login"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        app:layout_constraintVertical_bias="0.413"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="332dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".kredihesapac">
+
+    <EditText
+        android:id="@+id/kimlik2"
+        android:layout_width="217dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginBottom="28dp"
+        android:background="#08092A"
+        android:hint="TC Kimlik No:"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/ad2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/ad2"
+        android:layout_width="217dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginBottom="32dp"
+        android:background="#08092A"
+        android:hint="Ad ve Soyad:"
+        android:inputType="textPersonName"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/telefon2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/telefon2"
+        android:layout_width="217dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginBottom="28dp"
+        android:background="#08092A"
+        android:hint="Telefon Numarası:"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/mail2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mail2"
+        android:layout_width="217dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="89dp"
+        android:layout_marginLeft="89dp"
+        android:layout_marginBottom="50dp"
+        android:background="#08092A"
+        android:hint="Mail Adresi:"
+        android:inputType="textEmailAddress"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/kayitolbireysel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/kayitolbireysel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="133dp"
+        android:layout_marginLeft="133dp"
+        android:layout_marginBottom="80dp"
+        android:background="#FD6D00"
+        android:onClick="bukayitoll"
+        android:text="Başvuryu Tamamla"
+        android:textColor="#08092A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/geri9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:background="#FD6D00"
+        android:onClick="bugeri4"
+        android:text="Geri "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/kimlik2"
+        tools:layout_editor_absoluteX="-1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

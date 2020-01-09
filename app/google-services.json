@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "884162859114",
+    "firebase_url": "https://mobilbanking1.firebaseio.com",
+    "project_id": "mobilbanking1",
+    "storage_bucket": "mobilbanking1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884162859114:android:a7900f2b427a7d8bb1ba13",
+        "android_client_info": {
+          "package_name": "com.example.mobilbanka"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884162859114-rbf0gbhe05mrv8lqoovkdvg6e3l0p8ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpvXiv0KP_4TKSANCe7JcGHA3Bs65u8GA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884162859114-rbf0gbhe05mrv8lqoovkdvg6e3l0p8ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884162859114:android:59be7c1849679049b1ba13",
+        "android_client_info": {
+          "package_name": "com.example.mobilebanking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "884162859114-rbf0gbhe05mrv8lqoovkdvg6e3l0p8ae.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpvXiv0KP_4TKSANCe7JcGHA3Bs65u8GA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "884162859114-rbf0gbhe05mrv8lqoovkdvg6e3l0p8ae.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

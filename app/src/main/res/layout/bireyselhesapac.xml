@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".kredihesapac">
+
+    <EditText
+        android:id="@+id/kimlik2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="231dp"
+        android:layout_marginBottom="344dp"
+        android:background="#08092A"
+        android:hint="TC Kimlik No:"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/kayitolbireysel"
+        app:layout_constraintEnd_toEndOf="@+id/ad2"
+        app:layout_constraintStart_toStartOf="@+id/ad2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ad2"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="40dp"
+        android:background="#08092A"
+        android:hint="Ad ve Soyad:"
+        android:inputType="textPersonName"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/telefon2"
+        app:layout_constraintEnd_toEndOf="@+id/telefon2"
+        app:layout_constraintStart_toStartOf="@+id/telefon2"
+        app:layout_constraintTop_toBottomOf="@+id/kimlik2" />
+
+    <EditText
+        android:id="@+id/telefon2"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="40dp"
+        android:background="#08092A"
+        android:hint="Telefon Numarası:"
+        android:inputType="number"
+        android:maxLength="11"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintEnd_toEndOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/kayitolbireysel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="70dp"
+        android:background="#FD6D00"
+        android:onClick="bukayitol"
+        android:text="Başvuryu Tamamla"
+        android:textColor="#08092A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/editText4" />
+
+    <Button
+        android:id="@+id/geri9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="185dp"
+        android:background="#FD6D00"
+        android:onClick="bugeri4"
+        android:text="Geri "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/kimlik2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginBottom="40dp"
+        android:background="#08092A"
+        android:ems="10"
+        android:hint="Aylık Gelir:"
+        android:inputType="number"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintEnd_toEndOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="0dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="81dp"
+        android:layout_marginLeft="81dp"
+        android:layout_marginBottom="48dp"
+        android:background="#08092A"
+        android:ems="10"
+        android:hint="Kredi Miktarı:"
+        android:inputType="number"
+        android:textColor="#E9E7E0"
+        android:textColorHint="#E9E7E0"
+        app:layout_constraintBottom_toTopOf="@+id/kayitolbireysel"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

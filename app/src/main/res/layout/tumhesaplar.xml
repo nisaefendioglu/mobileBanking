@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E9E7E0"
+    tools:context=".tumhesaplar">
+
+    <Button
+        android:id="@+id/geri5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="153dp"
+        android:background="#FD6D00"
+        android:onClick="bugeri5"
+        android:text="Geri "
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/vadesiz"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tumhesap1"
+        android:layout_width="301dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="79dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:text="Tüm Hesaplarım"
+        android:textColor="#08092A"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/acilistarihi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/vadesiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginBottom="13dp"
+        android:text="Vadesiz"
+        android:textColor="#08092A"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/play"
+        app:layout_constraintEnd_toStartOf="@+id/acilistarihi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/geri5" />
+
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Play Kart"
+        android:textColor="#08092A"
+        app:layout_constraintBottom_toTopOf="@+id/hesapno"
+        app:layout_constraintStart_toStartOf="@+id/vadesiz"
+        app:layout_constraintTop_toBottomOf="@+id/vadesiz" />
+
+    <TextView
+        android:id="@+id/hesapno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="47dp"
+        android:text="TR 4800 5000 2890 7895 8018 2305"
+        android:textColor="#08092A"
+        app:layout_constraintBottom_toTopOf="@+id/hesapdetay"
+        app:layout_constraintStart_toStartOf="@+id/play"
+        app:layout_constraintTop_toBottomOf="@+id/play" />
+
+    <Button
+        android:id="@+id/hesapdetay"
+        android:layout_width="405dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="120dp"
+        android:background="#FD6D00"
+        android:onClick="buhesapdetay"
+        android:text="Hesap Detayları"
+        android:textColor="#08092A"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acilistarihi" />
+
+    <TextView
+        android:id="@+id/acilistarihi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginBottom="156dp"
+        android:text="Hesap Açılış Tarihi: 23/05/19"
+        android:textColor="#08092A"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/hesapdetay"
+        app:layout_constraintEnd_toEndOf="@+id/tumhesap1"
+        app:layout_constraintStart_toStartOf="@+id/tumhesap1"
+        app:layout_constraintTop_toBottomOf="@+id/tumhesap1" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

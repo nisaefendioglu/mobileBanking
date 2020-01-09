@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mobilbanka">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".onay"></activity>
+        <activity android:name=".borcodeme" />
+        <activity android:name=".akillirehber" />
+        <activity android:name=".otomatikodeme" />
+        <activity android:name=".faturaodeme" />
+        <activity android:name=".hesapdetay" />
+        <activity android:name=".bireyselhesapac" />
+        <activity android:name=".bankahesapac" />
+        <activity android:name=".kredihesapac" />
+        <activity android:name=".kredihesap" />
+        <activity android:name=".vadelihesap" />
+        <activity android:name=".vadesizhesap" />
+        <activity android:name=".tumhesaplar" />
+        <activity android:name=".kayit" />
+        <activity android:name=".basvurular" />
+        <activity android:name=".odemeler" />
+        <activity android:name=".hesaplarim" />
+        <activity android:name=".menu" />
+        <activity android:name=".varliklar" />
+        <activity android:name=".anasayfa">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

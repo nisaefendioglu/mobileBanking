@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hesaplarim">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="414dp"
+        android:layout_height="736dp"
+        android:background="#E9E7E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/geri2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FD6D00"
+            android:onClick="bugeri2"
+            android:text="Geri "
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="#08092A"
+            android:onClick="butumhesap"
+            android:text="TÜM HESAPLARIM"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="#E9E7E0"
+            android:onClick="buvadesiz"
+            android:text="VADESİZ HESAPLARIM"
+            android:textColor="#08092A" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="#08092A"
+            android:onClick="buvadeli"
+            android:text="VADELİ HESAPLARIM"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="#E9E7E0"
+            android:onClick="bukredi"
+            android:text="KREDİ HESAPLARIM"
+            android:textColor="#08092A" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="72dp"
+            android:background="#08092A"
+            android:onClick="buyeni"
+            android:text="YENİ HESAP AÇ"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

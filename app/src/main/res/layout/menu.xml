@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="421dp"
+        android:layout_height="736dp"
+        android:background="#E9E7E0" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/geri"
+            android:layout_width="112dp"
+            android:layout_height="wrap_content"
+            android:background="#FD6D00"
+            android:onClick="bugeri"
+            android:text="Geri "
+            android:textColor="#08092A" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:background="#08092A"
+            android:onClick="buhesap"
+            android:text="HESAPLARIM"
+            android:textColor="#E9E7E0" />
+
+        <Button
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:background="#E9E7E0"
+            android:onClick="buodeme"
+            android:text="ÖDEMELER"
+            android:textColor="#08092A" />
+
+        <Button
+            android:id="@+id/button11"
+            android:layout_width="match_parent"
+            android:layout_height="81dp"
+            android:background="#08092A"
+            android:onClick="bubasvuru"
+            android:text="BAŞVURULAR"
+            android:textColor="#E9E7E0" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="match_parent"
+            android:layout_height="74dp"
+            android:background="#E9E7E0"
+            android:onClick="bucikis"
+            android:text="ÇIKIŞ"
+            android:textColor="#08092A" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
